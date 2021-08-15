@@ -1,7 +1,77 @@
 :root {
   --body-background-color: #222;
+  --body-text-color: #eee;
+  --header-text-size: 70px;
+  --card-background-color: #444;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: var(--body-background-color);
+  color: var(--body-text-color);
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+  display: flex;
+}
+
+.MenuEstatico {
+  background-color: var(--body-background-color);
+  top: 10px;
+  padding: 10px;
+  position: fixed;
+  width: 40%;
+  max-height: 100vh;
+}
+
+.MenuEstatico__Header {
+  font-size: var(--header-text-size);
+  text-align: center;
+}
+
+.MenuEstatico__Conteudo {
+  display: flex;
+  text-align: justify; 
+  font-size: 20px;
+  font-weight: 200;
+  padding: 35px;
+}
+
+.MenuEstatico__Footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.MenuEstatico__FooterLeft {
+  width: 40%;
+} 
+
+.MenuEstatico__FooterRight {
+  width: 60%;
+} 
+
+.ConteudoDinamico {
+  margin: 10px 0px 0px 40%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 3000px;
+}
+
+.ConteudoDinamico__Texto {
+  margin: 0px 0px 20px 0px;
+  position: relative;
+  width: 90%;
+  height: 150px;
+  text-align: center;
+  background-color: var(--card-background-color);
+  min-height: 50px;
 }
