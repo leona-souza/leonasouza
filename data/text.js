@@ -7,7 +7,8 @@ const Texts = {
   }
 }
 
-function populateFromObject(object, path) {
+let populateFromObject;
+(populateFromObject = function(object, path) {
   for (let key in object) {
     if (typeof object[key] === "object") {
       const fullPath = `${path}.${key}`
@@ -17,6 +18,4 @@ function populateFromObject(object, path) {
       document.getElementById(fullPath).innerText = object[key]
     }
   }
-}
-
-populateFromObject(Texts, '.Texts')
+})(Texts, '.Texts')
