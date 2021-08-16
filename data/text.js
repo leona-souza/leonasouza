@@ -10,12 +10,12 @@ const Texts = {
 let populateFromObject;
 (populateFromObject = function(object, path) {
   for (let key in object) {
+    const fullPath = `${path}.${key}`
+    
     if (typeof object[key] === "object") {
-      const fullPath = `${path}.${key}`
       populateFromObject(object[key], fullPath)
     } else {
-      const fullPath = `${path.substring(1)}.${key}`
       document.getElementById(fullPath).innerText = object[key]
     }
   }
-})(Texts, '.Texts')
+})(Texts, 'Texts')
