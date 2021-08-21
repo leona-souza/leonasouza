@@ -7,6 +7,7 @@
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: var(--body-background-color);
@@ -50,7 +51,7 @@ body {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   font-size: 14px;
 }
@@ -72,7 +73,7 @@ body {
   background: transparent; /* make scrollbar transparent */
 }
 
-.ConteudoDinamico__Texto {
+.ConteudoDinamico__Card {
   margin: 0px 0px 20px 0px;
   position: relative;
   width: 90%;
@@ -81,4 +82,8 @@ body {
   min-height: 150px;
   background-color: var(--card-background-color);
   text-align: center;
+}
+
+.clickCursor:hover {
+  cursor: pointer;
 }
