@@ -12,8 +12,8 @@ const pt = {
   },
   Cards: [
     {
-      title: 'Programaria',
-      content: `Algum texto sobre o evento`
+      title: 'PrograMaria',
+      content: `Em 2021 tive a incrível oportunidade de participar do PrograMaria como mestre de cerimônias da sala de Produto.`
     },
     {
       title: 'Rancho Dev',
