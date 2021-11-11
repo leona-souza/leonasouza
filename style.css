@@ -49,6 +49,7 @@ h1 {
 }
 
 .MenuEstatico__Header {
+  font-family: 'Cherish', cursive;
   font-size: var(--header-title-size);
   text-align: center;
 }
