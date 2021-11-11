@@ -2,6 +2,12 @@ const defaultLanguage = 'pt'
 const urlGithub = 'https://github.com/leona-souza'
 const urlLinkedin = 'https://www.linkedin.com/in/leonasouza/'
 const urlTwitch = 'https://twitch.tv/leonadev'
+const cardImage = [
+  './assets/images/print_programaria.png',
+  './assets/images/print_ranchodev.jpg',
+  './assets/images/print_feministech.jpg',
+  './assets/images/print_twitch.png'
+]
 const pt = {
   Static: {
     header: 'Leona Souza',
@@ -12,22 +18,31 @@ const pt = {
   },
   Cards: [
     {
+      id: 1,
       title: 'PrograMaria',
-      content: `Em 2021 tive a incrível oportunidade de participar do PrograMaria como mestre de cerimônias da sala de Produto.`
+      content: `Em 2021 tive a incrível oportunidade de participar do PrograMaria como mestre de cerimônias da sala de Produto.`,
+      image: cardImage[0]
     },
     {
-      title: 'Rancho Dev',
-      content: `Algum texto sobre o evento`
+      id: 2,
+      title: 'RanchoDev',
+      content: `Algum texto sobre o evento`,
+      image: cardImage[1]
     },
     {
+      id: 3,
       title: 'Feministech',
-      content: `Algum texto sobre o evento`
+      content: `Algum texto sobre o evento`,
+      image: cardImage[2]
     },
     {
+      id: 4,
       title: 'Twitch',
-      content: 'asd'
+      content: 'asd',
+      image: cardImage[3]
     },
     {
+      id: 5,
       title: 'Mentoria',
       content: 'asd'
     }
@@ -37,16 +52,39 @@ const en = {
   Static: {
     header: 'Leona Souza',
     description: `Hello! I am a software engineer that lives in São Paulo. I have programmed in PHP, MySQL, Java and JavaScript. Now I work as a frontend React developer at Gamers Club and I stream at Twitch sharing my studies, knowledge and learning with the community.`,
-    detailes: `text`
+    details: `In my late teens I started to code in PHP and MySQL for a personal porpuse, but I enjoyed the logical challenge so much that I started to study as a hobby. As a result the clients began to show up and I worked for about 4 or 5 years developing websites from scratch.
+    Eventually I decided to work with calligraphy writing weddings and birthdays invitations. It didn't take long until I changed my career again, this time choosing photography. My main activity was image editing.
+    Some years later my passion for coding started tickling me and I decided to fully dedicate to this area, this time to stay!`
   },
   Cards: [
     {
-      title: 'Twitch',
-      content: 'Card 1 content'
+      id: 1,
+      title: 'PrograMaria',
+      content: `In 2021 I had the amazing oportunity to be part of PrograMaria as co-host of the Products room.`,
+      image: cardImage[0]
     },
     {
-      title: 'Programaria',
-      content: 'Card 2 content'
+      id: 2,
+      title: 'RanchoDev',
+      content: `Algum texto sobre o evento`,
+      image: cardImage[1]
+    },
+    {
+      id: 3,
+      title: 'Feministech',
+      content: `Algum texto sobre o evento`,
+      image: cardImage[2]
+    },
+    {
+      id: 4,
+      title: 'Twitch',
+      content: 'asd',
+      image: cardImage[3]
+    },
+    {
+      id: 5,
+      title: 'Mentoria',
+      content: 'asd'
     }
   ]
 }
@@ -61,10 +99,19 @@ const loadCards = function(language, path = 'Cards') {
   document.getElementById(path).innerHTML = ''
 
   for (let key in language[path]) {
+    const {
+      content,
+      image,
+      title
+    } = language.Cards[key]
+
+    const imageTag = image ? `<img src='${image}' class='ConteudoDinamico__Image' />` : ''
+
     document.getElementById(path).innerHTML += `
     <card class="ConteudoDinamico__Card">
-      <h1>${language.Cards[key].title}</h1>
-      <p>${language.Cards[key].content}</p>
+      <h1 class="horizontalLine">${title}</h1>
+      ${imageTag}
+      <p>${content}</p>
     </card>
     `
   }

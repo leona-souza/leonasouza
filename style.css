@@ -1,11 +1,12 @@
 :root {
   --body-background-color: #f7f7f7; /* 111 */
   --body-text-color: #111111; /* eee */
-  --header-title-size: 100px;
-  --card-background-color: #e9e9e9; /* 222 */
-  --card-shadow-color: #bfbfbf;
+  --header-title-size: 80px;
+  --menu-description-size: 20px;
+  --card-background-color: #eeeeee; /* 222 */
+  --card-shadow-color: #cfcfcf;
   --card-border-color: #cccccc;
-  --menu-text-size: 20px;
+  --card-text-size: 14px;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   padding: 0;
   background-color: var(--body-background-color);
   color: var(--body-text-color);
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Nunito', sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -25,13 +26,17 @@ h1 {
 }
 
 .Container {
-  width: 100%;
-  max-width: 1600px;
   display: flex;
+  width: 100%;
+  margin: 0 150px;
+  max-width: 1600px;
   justify-content: center;
 }
 
 .MenuEstatico {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   min-width: 500px;
   height: 100vh;
@@ -46,7 +51,7 @@ h1 {
 .MenuEstatico__Conteudo {
   display: flex;
   text-align: justify; 
-  font-size: var(--menu-text-size);
+  font-size: var(--menu-description-size);
   font-weight: 200;
   padding: 20px 40px;
   max-width: 500px;
@@ -56,15 +61,16 @@ h1 {
   max-width: 500px;
   padding: 20px;
   text-align: justify;
+  font-weight: 300;
 }
 
 .MenuEstatico__Footer {
-  position: absolute;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
   bottom: 1px;
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  text-align: center;
   font-size: 14px;
 }
 
@@ -74,8 +80,9 @@ h1 {
 
 .ConteudoDinamico {
   width: 100%;
-  padding-top: 10px;
+  padding: 10px 20px 0 20px;
   max-height: 100vh;
+  min-width: 300px;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -87,17 +94,48 @@ h1 {
 }
 
 .ConteudoDinamico__Card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   margin: 0px 0px 20px 0px;
   padding: 20px;
-  position: relative;
-  width: 90%;
+  width: 100%;
+  min-width: 450px;
   max-width: 600px;
-  min-height: 150px;
+  font-size: var(--card-text-size);
   background-color: var(--card-background-color);
   text-align: justify;
-  box-shadow: 0px 2px 10px var(--card-shadow-color);
+  box-shadow: 0px 1px 10px var(--card-shadow-color);
+}
+
+.ConteudoDinamico__Image {
+  width: 70%;
+  margin: auto;
 }
 
 .clickCursor:hover {
   cursor: pointer;
+}
+
+.horizontalLine {
+  border-bottom: 1px solid var(--body-text-color);
+}
+
+@media (max-width: 1000px) {
+  .Container {
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  .MenuEstatico {
+    height: auto;
+  }
+
+  .MenuEstatico__Conteudo {
+    display: none;
+  }
+
+  .MenuEstatico__Detalhes {
+    display: none;
+  }
 }
