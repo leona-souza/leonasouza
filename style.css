@@ -1,12 +1,14 @@
 :root {
   --body-background-color: #f7f7f7; /* 111 */
   --body-text-color: #111111; /* eee */
-  --header-title-size: 80px;
-  --menu-description-size: 20px;
+  --body-text-size: 20px;
+  --header-title-size: 100px;
+  --menu-description-size: 24px;
   --card-background-color: #eeeeee; /* 222 */
   --card-shadow-color: #cfcfcf;
   --card-border-color: #cccccc;
-  --card-text-size: 14px;
+  --card-text-size: 18px;
+  --footer-text-size: 18px;
 }
 
 body {
@@ -16,12 +18,13 @@ body {
   background-color: var(--body-background-color);
   color: var(--body-text-color);
   font-family: 'Nunito', sans-serif;
+  font-size: var(--body-text-size);
   display: flex;
   justify-content: center;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -29,7 +32,7 @@ h1 {
   display: flex;
   width: 100%;
   margin: 0 150px;
-  max-width: 1600px;
+  max-width: 1800px;
   justify-content: center;
 }
 
@@ -38,7 +41,9 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-width: 500px;
+  width: 35%;
+  padding: 0 30px;
+  min-width: 600px;
   height: 100vh;
   background-color: var(--body-background-color);
 }
@@ -53,12 +58,10 @@ h1 {
   text-align: justify; 
   font-size: var(--menu-description-size);
   font-weight: 200;
-  padding: 20px 40px;
-  max-width: 500px;
+  margin: 20px 40px;
 }
 
 .MenuEstatico__Detalhes {
-  max-width: 500px;
   padding: 20px;
   text-align: justify;
   font-weight: 300;
@@ -71,7 +74,7 @@ h1 {
   bottom: 1px;
   width: 100%;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: var(--footer-text-size);
 }
 
 .MenuEstatico__Footer span {
@@ -79,7 +82,7 @@ h1 {
 }
 
 .ConteudoDinamico {
-  width: 100%;
+  width: 65%;
   padding: 10px 20px 0 20px;
   max-height: 100vh;
   min-width: 300px;
@@ -101,7 +104,7 @@ h1 {
   padding: 20px;
   width: 100%;
   min-width: 450px;
-  max-width: 600px;
+  max-width: 800px;
   font-size: var(--card-text-size);
   background-color: var(--card-background-color);
   text-align: justify;
