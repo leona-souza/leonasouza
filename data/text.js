@@ -105,7 +105,9 @@ const loadCards = function(language, path = 'Cards') {
       title
     } = language.Cards[key]
 
-    const imageTag = image ? `<img src='${image}' class='ConteudoDinamico__Image' />` : ''
+    const imageTag = image ?
+      `<img src='${image}' class='ConteudoDinamico__Image' />` :
+      ''
 
     document.getElementById(path).innerHTML += `
     <card class="ConteudoDinamico__Card">
@@ -137,8 +139,8 @@ const link = function(destination) {
 const toggleAbout = function () {
   const hideElement = document.getElementById('hide')
   const arrowElement = document.getElementById('arrow')
-  let { display } = window.getComputedStyle(hideElement)
 
+  const { display } = window.getComputedStyle(hideElement)
   if (display === 'none') {
     hideElement.style.display = 'flex'
     arrowElement.style.transform = `rotate(180deg)`
@@ -155,44 +157,3 @@ const populatePage = function(language) {
 }
 
 populatePage(eval(defaultLanguage))
-
-
-
-
-
-
-
-
-/*                             let LeonaSouza = {
-                              position: 'Software Engineer',
-                              company: 'Gamers Club',
-                              mainSkills: ['HTML', 'CSS', 'JavaScript', 'React', 'Git'],
-                              otherSkills: ['SQL', 'MongoDB', 'Node.js', 'Java', 'Spring'],
-                              softSkills: ['Ethics', 'Teamwork', 'Empathy', 'Problem Solver'],
-                              social: {
-                                twitter: 'LeonaDev', twitch: 'LeonaDev', github: 'leona-souza' 
-                              }
-                            }
-
-
-
-
-                                      let LeonaSouza = {
-                                        position: 'Software Engineer',
-                                        mainSkills: ['HTML', 'CSS', 'JavaScript', 'React', 'Git'],
-                                        otherSkills: ['SQL', 'MongoDB', 'Node.js', 'Java', 'Spring'],
-                                        softSkills: ['Ethics', 'Teamwork', 'Empathy', 'Problem Solver'],
-                                        social: { 
-                                          twitter: 'LeonaDev', twitch: 'LeonaDev', github: 'leona-souza'
-                                        }
-                                      }
-
-
-
-                                      let LeonaSouza = {
-                                        position: 'Software Engineer',
-                                        company: 'Gamers Club',
-                                        social: {
-                                          twitter: 'LeonaDev', twitch: 'LeonaDev', github: 'leona-souza' 
-                                        }
-                                      } */
