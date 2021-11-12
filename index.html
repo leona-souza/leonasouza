@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Leona Souza</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> -->
@@ -22,13 +22,25 @@
         <header class="MenuEstatico__Header" id="Static.header">
           <!-- HEADER -->
         </header>
-        <section class="MenuEstatico__Conteudo" id="Static.description"> 
-          <!-- DESCRIPTION -->
-        </section>
-        <section class="MenuEstatico__Detalhes" id="Static.details"> 
-          <!-- DETAILS -->
+
+        <div class="MenuEstatico__Hide" id="hide">
+          <section class="MenuEstatico__Conteudo" id="Static.description"> 
+            <!-- DESCRIPTION -->
+          </section>
+          <section class="MenuEstatico__Detalhes" id="Static.details"> 
+            <!-- DETAILS -->
+          </section>
+        </div>
+
+        <section class="MenuEstatico__ArrowContainer" onclick="toggleAbout()">
+          <img
+            src="/assets/icons/down-arrow.png"
+            class="MenuEstatico__Arrow"
+            id='arrow'
+          />
         </section>
       </div>
+
       <footer class="MenuEstatico__Footer">
         <div>
           <span onclick="languageSwitch('pt')" class="clickCursor">pt-BR</span>
@@ -39,6 +51,7 @@
         </div>
       </footer>
     </aside>
+    
     <main class="ConteudoDinamico" id="Cards">
       <!-- CARDS -->
     </main>

@@ -32,19 +32,19 @@ const pt = {
     {
       id: 3,
       title: 'Feministech',
-      content: `Feministech é uma equipe que me acolheu com muito carinho, onde conheci muitas pessoas incríveis. Esta imagem registra uma palestra que dei em uma maratona de palestras organizada pela Feministech.`,
+      content: `Feministech é uma equipe que me acolheu com muito carinho, onde conheci muitas pessoas incríveis. Esta imagem registra uma palestra que dei em uma maratona de 12 horas de palestras organizada pela Feministech.`,
       image: cardImage[2]
     },
     {
       id: 4,
       title: 'Twitch',
-      content: 'Faço lives na Twitch, onde compartilho, aprendo e desenvolvo projetos ao vivo. A agenda acaba variando muito por motivos de trabalho e estudos.',
+      content: `Faço lives na Twitch, onde compartilho, aprendo e desenvolvo projetos ao vivo. A agenda acaba variando muito por motivos de trabalho e estudos.`,
       image: cardImage[3]
     },
     {
       id: 5,
       title: 'Mentoria',
-      content: 'A Feministech passou a organizar grupos gratuitos de mentoria para pessoas que se identificam no feminino e eu faço parte desse projeto como mentora. O objetivo desse grupo é ajudar as pessoas a iniciar ou evoluir na carreira. No momento o projeto está em sua fase inicial e é apenas para mentoria frontend.'
+      content: `A Feministech passou a organizar grupos gratuitos de mentoria para pessoas que se identificam no feminino e eu faço parte desse projeto como mentora. O objetivo desse grupo é ajudar as pessoas a iniciar ou evoluir na carreira. No momento o projeto está em sua fase inicial e é apenas para mentoria frontend.`
     }
   ]
 }
@@ -66,25 +66,25 @@ const en = {
     {
       id: 2,
       title: 'RanchoDev',
-      content: `Algum texto sobre o evento`,
+      content: `In september 2021 I gave a talk at RanchoDev (online event because of pandemic) about subjects for beginners.`,
       image: cardImage[1]
     },
     {
       id: 3,
       title: 'Feministech',
-      content: `Algum texto sobre o evento`,
+      content: `Feministech is a team that has sheltered me with a lot of affection, and that made me meet many amazing people. This image is from a talk that I gave on a 12 hours series of talks organized by Feministech.`,
       image: cardImage[2]
     },
     {
       id: 4,
       title: 'Twitch',
-      content: 'asd',
+      content: `Sometimes I go live at Twitch sharing, learning and developing projects. The schedule is not fixed because of work and studies.`,
       image: cardImage[3]
     },
     {
       id: 5,
       title: 'Mentoria',
-      content: 'asd'
+      content: `Feministech started to organize free groups of mentorship to people who identify themselves in the feminine and I am part of this project as a mentor. The objective of this group is to help people to get started in their carreers or to grow. At the moment the project is in its initial state and is for frontend only.`
     }
   ]
 }
@@ -132,6 +132,20 @@ const languageSwitch = function(language) {
 
 const link = function(destination) {
   return window.open(destination, '_blank')
+}
+
+const toggleAbout = function () {
+  const hideElement = document.getElementById('hide')
+  const arrowElement = document.getElementById('arrow')
+  let { display } = window.getComputedStyle(hideElement)
+
+  if (display === 'none') {
+    hideElement.style.display = 'flex'
+    arrowElement.style.transform = `rotate(180deg)`
+  } else {
+    hideElement.style.display = 'none'
+    arrowElement.style.transform = `rotate(0deg)`
+  }
 }
 
 const populatePage = function(language) {
