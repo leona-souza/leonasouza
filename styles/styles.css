@@ -3,6 +3,7 @@
   --body-text-color: #111111; /* eee */
   --body-text-size: 20px;
   --header-title-size: 140px;
+  --header-title-responsive-size: 80px;
   --menu-description-size: 24px;
   --card-background-color: #f1f1f1; /* 222 */
   --card-shadow-color: #cfcfcf;
@@ -35,7 +36,6 @@ h1 {
   width: 100%;
   margin: 0 150px;
   max-width: 1800px;
-  min-width: 600px;
   justify-content: center;
 }
 

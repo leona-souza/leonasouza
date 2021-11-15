@@ -37,6 +37,11 @@
     height: auto;
     width: 100%;
     padding: 0;
+    min-width: 0px;
+  }
+
+  .MenuEstatico__Header {
+    font-size: var(--header-title-responsive-size);
   }
 
   .MenuEstatico__Arrow {
@@ -50,6 +55,7 @@
   }
 
   .ConteudoDinamico__Card {
-    width: 90%;
+    min-width: 50%;
+    max-width: 89%;
   }
 }
