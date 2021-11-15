@@ -46,6 +46,8 @@
 
   .MenuEstatico__Arrow {
     display: block;
+    height: 30px;
+    margin-bottom: 20px;
   }
 
   .ConteudoDinamico {
