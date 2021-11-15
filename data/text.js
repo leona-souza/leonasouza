@@ -2,12 +2,14 @@ const defaultLanguage = 'pt'
 const urlGithub = 'https://github.com/leona-souza'
 const urlLinkedin = 'https://www.linkedin.com/in/leonasouza/'
 const urlTwitch = 'https://twitch.tv/leonadev'
+
 const cardImage = [
   './assets/images/print_programaria.png',
   './assets/images/print_ranchodev.jpg',
   './assets/images/print_feministech.jpg',
   './assets/images/print_twitch.png'
 ]
+
 const pt = {
   Static: {
     header: 'Leona Souza',
