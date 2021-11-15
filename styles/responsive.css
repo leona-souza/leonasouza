@@ -1,0 +1,55 @@
+@media (max-width: 1775px) {
+  .Container {
+    margin-right: 0;
+  }
+
+  .ConteudoDinamico__Card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .ConteudoDinamico {
+    width: 700px;
+  }
+
+  .ConteudoDinamico__Card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .Container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .Container {
+    position: static;
+    justify-content: normal;
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  .MenuEstatico {
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .MenuEstatico__Arrow {
+    display: block;
+  }
+
+  .ConteudoDinamico {
+    position: static;
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+
+  .ConteudoDinamico__Card {
+    width: 90%;
+  }
+}
