@@ -4,10 +4,10 @@ const urlLinkedin = 'https://www.linkedin.com/in/leonasouza/'
 const urlTwitch = 'https://twitch.tv/leonadev'
 
 const cardImage = [
-  './assets/images/print_programaria.png',
-  './assets/images/print_ranchodev.jpg',
-  './assets/images/print_feministech.jpg',
-  './assets/images/print_twitch.png'
+  '/assets/images/print_programaria.png',
+  '/assets/images/print_ranchodev.jpg',
+  '/assets/images/print_feministech.jpg',
+  '/assets/images/print_twitch.png'
 ]
 
 const data = {
@@ -108,10 +108,15 @@ const loadCards = function(language, path = 'Cards') {
       image,
       title
     } = language.Cards[key]
+    let imageTag = ''
 
-    const imageTag = image ?
-      `<img src='${image}' class='ConteudoDinamico__Image' />` :
-      ''
+    if (image) {
+      imageTag = `
+        <img src="${image}"
+        class="ConteudoDinamico__Image clickCursor"
+        onclick="window.open('${image}', '_blank')"
+      />` 
+    }
 
     document.getElementById(path).innerHTML += `
       <card class="ConteudoDinamico__Card">
