@@ -120,7 +120,7 @@ const loadCards = function(language, path = 'Cards') {
 
     document.getElementById(path).innerHTML += `
       <card class="ConteudoDinamico__Card">
-        <h1 class="horizontalLine">${title}</h1>
+        <h1 class="ConteudoDinamico__CardTitulo">${title}</h1>
         ${imageTag}
         <p>${content}</p>
       </card>

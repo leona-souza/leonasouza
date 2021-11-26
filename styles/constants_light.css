@@ -1,0 +1,13 @@
+:root {
+  --body-background-color: #fcfcfc; /* 111 */
+  --body-text-color: #111111; /* eee */
+  --body-text-size: 20px;
+  --header-title-size: 140px;
+  --header-title-responsive-size: 80px;
+  --menu-description-size: 24px;
+  --card-background-color: #f1f1f1; /* 222 */
+  --card-shadow-color: #cfcfcf;
+  --card-border-color: #cccccc;
+  --card-text-size: 18px;
+  --footer-text-size: 18px;
+}
