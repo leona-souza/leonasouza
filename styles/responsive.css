@@ -40,8 +40,20 @@
     min-width: 0px;
   }
 
+  .MenuEstatico__Hide {
+    display: none;
+  }
+
   .MenuEstatico__Header {
     font-size: var(--header-title-responsive-size);
+  }
+
+  .MenuEstatico__Conteudo {
+    font-size: var(--menu-description-responsive-size);
+  }
+
+  .MenuEstatico__Detalhes {
+    font-size: var(--menu-details-responsive-size);
   }
 
   .MenuEstatico__Arrow {

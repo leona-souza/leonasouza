@@ -6,6 +6,9 @@
   --header-title-color: #ddd;
   --header-title-responsive-size: 80px;
   --menu-description-size: 24px;
+  --menu-description-responsive-size: 20px;
+  --menu-details-size: 18px;
+  --menu-details-responsive-size: 16px;
   --card-background-color: #1a1a1a;
   --card-shadow-color: #0d0d0d;
   --card-border-color: #cccccc;
