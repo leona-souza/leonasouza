@@ -1,12 +1,10 @@
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: var(--body-background-color);
+  background-color: #555;
   color: var(--body-text-color);
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: var(--body-text-size);
-  display: flex;
   justify-content: center;
 }
 
@@ -18,28 +16,45 @@ h1 {
 .Container {
   position: relative;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 150px;
-  max-width: 1800px;
+  max-width: 1266px;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .MenuEstatico {
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 35%;
   padding: 0 30px;
   min-width: 600px;
-  height: 100vh;
-  background-color: var(--body-background-color);
+  background-color: #e6ccc8;
+  box-shadow: -1em 0px 25px 1px rgba(0, 0, 0, 0.8);
 }
 
 .MenuEstatico__Header {
-  font-family: 'Cherish', cursive;
-  font-size: var(--header-title-size);
+  font-family: 'Spectral', serif;
+  font-size: 60px;
+  color: var(--header-title-color);
+  text-align: center;
+}
+
+.MenuEstatico__Subtitle {
+  font-family: 'Spectral', serif;
+  font-size: 28px;
+  color: var(--header-title-color);
+  text-align: center;
+}
+
+.MenuEstatico__Sobre {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.MenuEstatico__SectionName {
+  font-family: 'Spectral', serif;
+  font-size: 30px;
   color: var(--header-title-color);
   text-align: center;
 }
@@ -57,7 +72,7 @@ h1 {
 }
 
 .MenuEstatico__Detalhes {
-  padding: 20px;
+  padding: 0 20px;
   text-align: justify;
   font-size: var(--menu-details-size);
   font-weight: 300;
@@ -94,13 +109,11 @@ h1 {
 }
 
 .ConteudoDinamico {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  padding: 0px 20px 0 20px;
+  padding: 0px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
 }
 
 .ConteudoDinamico__Card {
@@ -130,4 +143,73 @@ h1 {
 
 .clickCursor:hover {
   cursor: pointer;
+}
+.MenuEstatico__LinkContainer {
+  display: flex;
+  align-content: center;
+  margin: 12px 0;
+}
+
+.Link__Icon {
+  margin: auto 10px auto 0;
+  width: 30px;
+  height: 30px;
+}
+
+.Link__Text {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--body-text-color);
+  text-decoration: none;
+}
+
+.Link__Text :visited {
+  color: var(--body-text-color);
+  text-decoration: none;
+}
+
+.Bloco {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 34px;
+}
+
+.Formacao__Data {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.Formacao__Instituicao {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.Formacao__Curso {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.Experiencia__Titulo {
+  margin: 0;
+  font-size: 20px;
+}
+
+.Experiencia__Data {
+  margin: 0;
+  font-size: 16px;
+}
+
+.Experiencia__Descricao {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.Competencias__Lista {
+  margin: 0;
+  width: 100%;
+}
+
+.Competencias__Lista li {
+  margin: 10px 0;
 }

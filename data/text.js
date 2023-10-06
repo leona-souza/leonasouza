@@ -1,5 +1,5 @@
 const defaultLanguage = 'pt'
-const urlGithub = 'https://github.com/leona-souza'
+const urlGithub = 'https://github.com/leonasouza'
 const urlLinkedin = 'https://www.linkedin.com/in/leonasouza/'
 const urlTwitch = 'https://twitch.tv/leonadev'
 
@@ -13,8 +13,8 @@ const cardImage = [
 const data = {
   pt: {
     Static: {
-      header: 'Leona Souza',
-      description: `Olá! Sou uma engenheira de software que reside em São Paulo. Já programei em PHP, MySQL, Java e JavaScript. Atualmente trabalho como desenvolvedora frontend usando React na Gamers Club e faço lives na Twitch compartilhando estudos, conhecimentos e aprendendo com a comunidade.`,
+      header: 'LEONA SOUZA',
+      description: `Sou uma mulher trans que programa desde a adolescência. Comecei como autodidata, mas hoje tenho formação acadêmica na área. Estou constantemente fazendo cursos sobre temas nos quais atuo e trabalhando as soft skills, que considero tão importantes quanto as hard skills.`,
       details: `Durante o final de minha adolescência comecei a programar em PHP e MySQL por uma pequena necessidade, mas acabei gostando tanto do desafio lógico que fui me aprofundando por prazer. Consequentemente os clientes foram aparecendo e trabalhei por aproximadamente 4 a 5 anos desenvolvendo sites do zero.
       Eventualmente troquei de ramo e comecei a trabalhar com caligrafia fazendo sobrescrição de convites de casamento e aniversário. Não durou muito tempo até que eu trocasse novamente de carreira, desta vez escolhendo fotografia. Minha principal atividade foi tratamento de imagens.
       Alguns anos depois a paixão pela programação voltou a me provocar e decidi voltar para o ramo com tudo, desta vez para ficar!`
@@ -113,9 +113,9 @@ const loadCards = function(language, path = 'Cards') {
     if (image) {
       imageTag = `
         <img src="${image}"
-        class="ConteudoDinamico__Image clickCursor"
-        onclick="window.open('${image}', '_blank')"
-      />` 
+          class="ConteudoDinamico__Image clickCursor"
+          onclick="window.open('${image}', '_blank')"
+        />` 
     }
 
     document.getElementById(path).innerHTML += `
