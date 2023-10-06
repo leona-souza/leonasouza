@@ -25,9 +25,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 35%;
   padding: 0 30px;
-  min-width: 600px;
   background-color: #e6ccc8;
   box-shadow: -1em 0px 25px 1px rgba(0, 0, 0, 0.8);
 }
