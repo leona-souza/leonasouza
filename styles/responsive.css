@@ -26,7 +26,6 @@
 
 @media (max-width: 1250px) {
   .Container {
-    position: static;
     justify-content: normal;
     margin: 0px;
     flex-direction: column;
@@ -41,7 +40,7 @@
   }
 
   .MenuEstatico__Hide {
-    display: none;
+    display: block;
   }
 
   .MenuEstatico__Header {
@@ -65,12 +64,20 @@
   .ConteudoDinamico {
     position: static;
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 0px;
   }
 
   .ConteudoDinamico__Card {
     min-width: 50%;
     max-width: 89%;
+  }
+
+  .Bloco {
+    padding: 0 20px;
+  }
+
+  .Competencias__Lista li {
+    margin-left: 20px;
   }
 }
 
