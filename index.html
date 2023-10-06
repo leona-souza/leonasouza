@@ -2,13 +2,15 @@
 <html>
 <head>
   <title>Leona Souza</title>
-  <link rel="stylesheet" href="styles/constants_dark.css" />
+  <link rel="stylesheet" href="styles/constants_light.css" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/responsive.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cherish&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Spectral:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Open+Sans:wght@300;400&family=Spectral:wght@500&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
@@ -21,41 +23,166 @@
   <div class="Container">
     <aside class="MenuEstatico">
       <div>
-        <header class="MenuEstatico__Header" id="Static.header">
+        <header class="MenuEstatico__Header">
           <!-- HEADER -->
+          <span>LEONA SOUZA</span>
+          <div class="MenuEstatico__Subtitle">Front-End Software Engineer</div>
         </header>
 
         <div class="MenuEstatico__Hide" id="hide">
           <section class="MenuEstatico__Conteudo" id="Static.description"> 
             <!-- DESCRIPTION -->
           </section>
-          <section class="MenuEstatico__Detalhes" id="Static.details"> 
+          <section class="MenuEstatico__Detalhes"> 
             <!-- DETAILS -->
+
+            <div class="MenuEstatico__SectionName">
+              SOBRE
+            </div>
+            <p class="MenuEstatico__Sobre">
+              Sou uma <strong>mulher trans</strong> que programa
+              desde a adolescência. Comecei
+              como autodidata, mas hoje tenho
+              <strong>formação acadêmica</strong> na área. Estou
+              constantemente fazendo cursos
+              sobre temas nos quais atuo e
+              trabalhando as <strong>soft skills</strong>, que
+              considero tão importantes quanto as
+              <strong>hard skills</strong>.
+            </p>
+
+            <p class="MenuEstatico__SectionName">FORMAÇÃO</p>
+            <div class="Bloco">
+              <p class="Formacao__Data">2020 - 2021</p>
+              <p class="Formacao__Instituicao">UNIP</p>
+              <p class="Formacao__Curso">Análise e Desenvolvimento de Sistemas</p>
+            </div>
+            <div class="Bloco">
+              <p class="Formacao__Data">2013 - 2015</p>
+              <p class="Formacao__Instituicao">SENAC</p>
+              <p class="Formacao__Curso">Técnico em Processos Fotográficos</p>
+            </div>
+            <div class="Bloco">
+              <p class="Formacao__Data">2005 - 2008</p>
+              <p class="Formacao__Instituicao">Faculdade Associada Brasil</p>
+              <p class="Formacao__Curso">Administração de Empresas</p>
+            </div>
+
+            <p class="MenuEstatico__SectionName">IDIOMAS</p>
+            <div class="Bloco">
+              <p class="Formacao__Instituicao">Inglês</p>
+              <p class="Formacao__Curso">Avançado (viagens aos EUA)</p>
+            </div>
+            <div class="Bloco">
+              <p class="Formacao__Instituicao">Espanhol</p>
+              <p class="Formacao__Curso">Intermediário</p>
+            </div>
+
+            <p class="MenuEstatico__SectionName">LINKS</p>
+            <div class="MenuEstatico__LinkContainer">
+              <img
+                src="/assets/icons/icon-linkedin.svg"
+                class="Link__Icon"
+              />
+              <a
+                class="Link__Text"
+                href="https://www.linkedin.com/in/leonasouza"
+                target="blank"
+              >
+                linkedin.com/in/leonasouza
+              </a>
+            </div>
+            <div class="MenuEstatico__LinkContainer">
+              <img
+                src="/assets/icons/icon-medium.svg"
+                class="Link__Icon"
+              />
+              <a
+                class="Link__Text"
+                href="https://www.medium.com/@leonasouza"
+                target="blank"
+              >
+                medium.com/@leonasouza
+              </a>
+            </div>
           </section>
         </div>
 
-        <section class="MenuEstatico__ArrowContainer" onclick="toggleAbout()">
-          <img
-            src="/assets/icons/down-arrow.png"
-            class="MenuEstatico__Arrow"
-            id='arrow'
-          />
         </section>
       </div>
-
-      <footer class="MenuEstatico__Footer">
-        <div>
-          <span onclick="languageSwitch('pt')" class="clickCursor">pt-BR</span>
-          <span onclick="languageSwitch('en')" class="clickCursor">en</span>
-        </div>
-        <div id="Footer.links">
-          <!-- LINKS -->
-        </div>
-      </footer>
     </aside>
     
-    <main class="ConteudoDinamico" id="Cards">
-      <!-- CARDS -->
+    <main class="ConteudoDinamico">
+      <p class="MenuEstatico__SectionName">EXPERIÊNCIA</p>
+      <div class="Bloco">
+        <p class="Experiencia__Titulo">
+          <strong>Gamers Club</strong> - Front-End Software Engineer
+        </p>
+        <p class="Experiencia__Data">
+          <strong>JUL de 2021 - atualmente</strong>
+        </p>
+        <p class="Experiencia__Descricao">
+          Desenvolvimento web e mobile usando <strong>React</strong>,
+          <strong>TypeScript</strong>, <strong>JavaScript</strong>,
+          <strong>Styled Components</strong> e <strong>React Native</strong>.
+          Proatividade e implementação de soluções que aumentam
+          a <strong>resiliência do sistema</strong>. Participação nos
+          <strong>processos de decisão</strong> e experiência com squad
+          dinâmico que precisa de <strong>soluções rápidas</strong>.
+        </p>
+      </div>
+      <div class="Bloco">
+        <p class="Experiencia__Titulo">
+          <strong>Freelancer</strong> - Fotógrafa e Tratadora de Imagens
+        </p>
+        <p class="Experiencia__Data">
+          <strong>FEV de 2017 - DEZ de 2019</strong>
+        </p>
+        <p class="Experiencia__Descricao">
+          Fotógrafa de eventos e tratadora de imagens. Utilizava
+          com frequência os softwares <strong>Adobe Photoshop Lightroom</strong>
+          e <strong>Adobe Photoshop</strong>.
+        </p>
+      </div>
+      <div class="Bloco">
+        <p class="Experiencia__Titulo">
+          <strong>Freelancer</strong> - Desenvolvedora Web
+        </p>
+        <p class="Experiencia__Data">
+          <strong>JAN de 2005 - DEZ de 2009</strong>
+        </p>
+        <p class="Experiencia__Descricao">
+          Desenvolvimento de sites dinâmicos de diversas áreas
+          utilizando <strong>PHP</strong>, <strong>MySQL</strong>,
+          <strong>JavaScript</strong>, <strong>HTML</strong> e
+          <strong>CSS</strong>.
+        </p>
+      </div>
+
+      <p class="MenuEstatico__SectionName">COMPETÊNCIAS</p>
+      <ul class="Competencias__Lista">
+        <li>React.js</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>HTML/CSS</li>
+        <li>React Native</li>
+        <li>Git</li>
+      </ul>
+
+      <p class="MenuEstatico__SectionName">PROJETOS</p>
+      <div class="Bloco">
+        <p class="Experiencia__Titulo">
+          <strong>Twitch</strong> - Streamer
+        </p>
+        <p class="Experiencia__Descricao">
+          Lives estudando, compartilhando conhecimentos,
+          participando de eventos e dando palestras. Participação
+          no <strong></strong>PrograMaria Summit 2021</strong> e na
+          conferência <strong>Mulheres na Inovação</strong> por
+          <strong>WoMakersCode</strong> em 2022.
+        </p>
+      </div>
+
     </main>
   </div>
 </body>
