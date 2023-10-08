@@ -2,14 +2,11 @@
 <html>
 <head>
   <title>Leona Souza</title>
-  <link rel="stylesheet" href="styles/constants_light.css" />
+  <link rel="stylesheet" href="styles/constants.css" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/responsive.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Spectral:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Open+Sans:wght@300;400&family=Spectral:wght@500&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -21,105 +18,97 @@
 
 <body>
   <div class="Container">
-    <aside class="MenuEstatico">
-      <div>
-        <header class="MenuEstatico__Header">
-          <!-- HEADER -->
-          <span>LEONA SOUZA</span>
-          <div class="MenuEstatico__Subtitle">Front-End Software Engineer</div>
-        </header>
+    <aside>
+      <header class="Aside__Nome">
+        <p>LEONA SOUZA</p>
+        <p class="Aside__Cargo">Front-End Software Engineer</p>
+      </header>
 
-        <div class="MenuEstatico__Hide" id="hide">
-          <section class="MenuEstatico__Conteudo" id="Static.description"> 
-            <!-- DESCRIPTION -->
-          </section>
-          <section class="MenuEstatico__Detalhes"> 
-            <!-- DETAILS -->
+      <p class="Secao__Titulo">SOBRE</p>
+      <p class="Aside__Sobre">
+        Sou uma <strong>mulher trans</strong> da zona sul de
+        <strong>São Paulo</strong> que programa desde a adolescência.
+        Comecei como autodidata, mas hoje tenho
+        <strong>formação acadêmica</strong> na área. Estou
+        constantemente fazendo cursos
+        sobre temas nos quais atuo e
+        trabalhando as <strong>soft skills</strong>, que
+        considero tão importantes quanto as
+        <strong>hard skills</strong>.
+      </p>
 
-            <div class="MenuEstatico__SectionName">
-              SOBRE
-            </div>
-            <p class="MenuEstatico__Sobre">
-              Sou uma <strong>mulher trans</strong> que programa
-              desde a adolescência. Comecei
-              como autodidata, mas hoje tenho
-              <strong>formação acadêmica</strong> na área. Estou
-              constantemente fazendo cursos
-              sobre temas nos quais atuo e
-              trabalhando as <strong>soft skills</strong>, que
-              considero tão importantes quanto as
-              <strong>hard skills</strong>.
-            </p>
+      <p class="Secao__Titulo">COMPETÊNCIAS</p>
+      <ul class="Competencias__Lista">
+        <li>React.js</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>HTML/CSS</li>
+        <li>React Native</li>
+        <li>Git</li>
+        <li>Comunicação</li>
+        <li>Trabalho em equipe</li>
+      </ul>
 
-            <p class="MenuEstatico__SectionName">FORMAÇÃO</p>
-            <div class="Bloco">
-              <p class="Formacao__Data">2020 - 2021</p>
-              <p class="Formacao__Instituicao">UNIP</p>
-              <p class="Formacao__Curso">Análise e Desenvolvimento de Sistemas</p>
-            </div>
-            <div class="Bloco">
-              <p class="Formacao__Data">2013 - 2015</p>
-              <p class="Formacao__Instituicao">SENAC</p>
-              <p class="Formacao__Curso">Técnico em Processos Fotográficos</p>
-            </div>
-            <div class="Bloco">
-              <p class="Formacao__Data">2005 - 2008</p>
-              <p class="Formacao__Instituicao">Faculdade Associada Brasil</p>
-              <p class="Formacao__Curso">Administração de Empresas</p>
-            </div>
+      <p class="Secao__Titulo">IDIOMAS</p>
+      <div class="Bloco">
+        <p class="Formacao__Instituicao">Inglês</p>
+        <p class="Formacao__Curso">Avançado (viagens aos EUA)</p>
+      </div>
+      <div class="Bloco Marginless">
+        <p class="Formacao__Instituicao">Espanhol</p>
+        <p class="Formacao__Curso">Intermediário</p>
+      </div>
 
-            <p class="MenuEstatico__SectionName">IDIOMAS</p>
-            <div class="Bloco">
-              <p class="Formacao__Instituicao">Inglês</p>
-              <p class="Formacao__Curso">Avançado (viagens aos EUA)</p>
-            </div>
-            <div class="Bloco">
-              <p class="Formacao__Instituicao">Espanhol</p>
-              <p class="Formacao__Curso">Intermediário</p>
-            </div>
-
-            <p class="MenuEstatico__SectionName">LINKS</p>
-            <div class="MenuEstatico__LinkContainer">
-              <img
-                src="/assets/icons/icon-linkedin.svg"
-                class="Link__Icon"
-              />
-              <a
-                class="Link__Text"
-                href="https://www.linkedin.com/in/leonasouza"
-                target="blank"
-              >
-                linkedin.com/in/leonasouza
-              </a>
-            </div>
-            <div class="MenuEstatico__LinkContainer">
-              <img
-                src="/assets/icons/icon-medium.svg"
-                class="Link__Icon"
-              />
-              <a
-                class="Link__Text"
-                href="https://www.medium.com/@leonasouza"
-                target="blank"
-              >
-                medium.com/@leonasouza
-              </a>
-            </div>
-          </section>
-        </div>
-
-        </section>
+      <p class="Secao__Titulo">LINKS</p>
+      <div class="Aside__LinkContainer">
+        <img
+          src="/assets/icons/icon-linkedin.png"
+          class="Link__Icon"
+        />
+        <a
+          class="Link__Text"
+          href="https://www.linkedin.com/in/leonasouza"
+          target="blank"
+        >
+          linkedin.com/in/leonasouza
+        </a>
+      </div>
+      <div class="Aside__LinkContainer">
+        <img
+          src="/assets/icons/icon-medium.png"
+          class="Link__Icon"
+        />
+        <a
+          class="Link__Text"
+          href="https://www.medium.com/@leonasouza"
+          target="blank"
+        >
+          medium.com/@leonasouza
+        </a>
+      </div>
+      <div class="Aside__LinkContainer">
+        <img
+          src="/assets/icons/icon-github.png"
+          class="Link__Icon"
+        />
+        <a
+          class="Link__Text"
+          href="https://github.com/leonasouza"
+          target="blank"
+        >
+          github.com/leonasouza
+        </a>
       </div>
     </aside>
     
-    <main class="ConteudoDinamico">
-      <p class="MenuEstatico__SectionName">EXPERIÊNCIA</p>
+    <main>
+      <p class="Secao__Titulo">EXPERIÊNCIA</p>
       <div class="Bloco">
         <p class="Experiencia__Titulo">
           <strong>Gamers Club</strong> - Front-End Software Engineer
         </p>
         <p class="Experiencia__Data">
-          <strong>JUL de 2021 - atualmente</strong>
+          JUL de 2021 - atualmente
         </p>
         <p class="Experiencia__Descricao">
           Desenvolvimento web e mobile usando <strong>React</strong>,
@@ -136,7 +125,7 @@
           <strong>Freelancer</strong> - Fotógrafa e Tratadora de Imagens
         </p>
         <p class="Experiencia__Data">
-          <strong>FEV de 2017 - DEZ de 2019</strong>
+          FEV de 2017 - DEZ de 2019
         </p>
         <p class="Experiencia__Descricao">
           Fotógrafa de eventos e tratadora de imagens. Utilizava
@@ -144,12 +133,12 @@
           e <strong>Adobe Photoshop</strong>.
         </p>
       </div>
-      <div class="Bloco">
+      <div class="Bloco Marginless">
         <p class="Experiencia__Titulo">
           <strong>Freelancer</strong> - Desenvolvedora Web
         </p>
         <p class="Experiencia__Data">
-          <strong>JAN de 2005 - DEZ de 2009</strong>
+          JAN de 2005 - DEZ de 2009
         </p>
         <p class="Experiencia__Descricao">
           Desenvolvimento de sites dinâmicos de diversas áreas
@@ -159,19 +148,24 @@
         </p>
       </div>
 
-      <p class="MenuEstatico__SectionName">COMPETÊNCIAS</p>
-      <ul class="Competencias__Lista">
-        <li>React.js</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>HTML/CSS</li>
-        <li>React Native</li>
-        <li>Git</li>
-        <li>Comunicação</li>
-        <li>Trabalho em equipe</li>
-      </ul>
+      <p class="Secao__Titulo">FORMAÇÃO</p>
+      <div class="Bloco">
+        <p class="Formacao__Data">2020 - 2021</p>
+        <p class="Formacao__Instituicao">UNIP</p>
+        <p class="Formacao__Curso">Análise e Desenvolvimento de Sistemas</p>
+      </div>
+      <div class="Bloco">
+        <p class="Formacao__Data">2013 - 2015</p>
+        <p class="Formacao__Instituicao">SENAC</p>
+        <p class="Formacao__Curso">Técnico em Processos Fotográficos</p>
+      </div>
+      <div class="Bloco">
+        <p class="Formacao__Data">2005 - 2008</p>
+        <p class="Formacao__Instituicao">Faculdade Associada Brasil</p>
+        <p class="Formacao__Curso">Administração de Empresas</p>
+      </div>
 
-      <p class="MenuEstatico__SectionName">PROJETOS</p>
+      <p class="Secao__Titulo">PROJETOS</p>
       <div class="Bloco">
         <p class="Experiencia__Titulo">
           <strong>Twitch</strong> - Streamer

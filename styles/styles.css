@@ -1,16 +1,20 @@
+body, html {
+  height: 100vh;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background-color: #555;
   color: var(--body-text-color);
   font-family: 'Inter', sans-serif;
   font-size: var(--body-text-size);
-  justify-content: center;
 }
 
-h1 {
-  font-size: 28px;
-  font-weight: 600;
+p {
+  margin: 0;
 }
 
 .Container {
@@ -19,145 +23,73 @@ h1 {
   max-width: 1266px;
   justify-content: center;
   margin: 0 auto;
+  flex-grow: 1;
 }
 
-.MenuEstatico {
-  display: flex;
+aside {
   flex-direction: column;
-  justify-content: space-between;
-  padding: 0 30px;
+  padding: 14px 30px;
   background-color: #e6ccc8;
   box-shadow: -1em 0px 25px 1px rgba(0, 0, 0, 0.8);
+  max-width: 450px;
 }
 
-.MenuEstatico__Header {
-  font-family: 'Spectral', serif;
-  font-size: 60px;
-  color: var(--header-title-color);
-  text-align: center;
-}
-
-.MenuEstatico__Subtitle {
-  font-family: 'Spectral', serif;
-  font-size: 28px;
-  color: var(--header-title-color);
-  text-align: center;
-}
-
-.MenuEstatico__Sobre {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5em;
-}
-
-.MenuEstatico__SectionName {
-  font-family: 'Spectral', serif;
-  font-size: 30px;
-  color: var(--header-title-color);
-  text-align: center;
-}
-
-.MenuEstatico__Hide {
-  display: flex;
-  flex-direction: column;
-}
-
-.MenuEstatico__Conteudo {
-  text-align: justify; 
-  font-size: var(--menu-description-size);
-  font-weight: 200;
-  margin: 20px 40px;
-}
-
-.MenuEstatico__Detalhes {
-  padding: 0 20px;
-  text-align: justify;
-  font-size: var(--menu-details-size);
-  font-weight: 300;
-}
-
-.MenuEstatico__ArrowContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.MenuEstatico__Arrow {
-  display: none;
-  height: 20px;
-  transform: rotate(0);
-  filter: invert(100%);
-}
-
-.MenuEstatico__Arrow:hover {
-  cursor: pointer;
-}
-
-.MenuEstatico__Footer {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  bottom: 1px;
-  width: 100%;
-  justify-content: space-between;
-  font-size: var(--footer-text-size);
-}
-
-.MenuEstatico__Footer span {
-  margin: 0px 10px;
-}
-
-.ConteudoDinamico {
-  padding: 0px 60px;
+main {
+  padding: 14px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
 }
 
-.ConteudoDinamico__Card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 0px 0px 20px 0px;
-  padding: 20px;
-  width: 100%;
-  min-width: 450px;
-  max-width: 800px;
-  font-size: var(--card-text-size);
-  background-color: var(--card-background-color);
+.Aside__Nome {
+  font-family: 'Spectral', serif;
+  font-size: 60px;
+  color: var(--header-title-color);
+  text-align: center;
+}
+
+.Aside__Cargo {
+  font-family: 'Spectral', serif;
+  font-size: 28px;
+  color: var(--header-title-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Aside__Sobre {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
   text-align: justify;
-  box-shadow: 0px 1px 10px var(--card-shadow-color);
 }
 
-.ConteudoDinamico__CardTitulo {
-  color: var(--card-title-color);
-  border-bottom: 1px solid var(--body-text-color);
+.Secao__Titulo {
+  font-family: 'Spectral', serif;
+  font-size: 24px;
+  color: var(--header-title-color);
+  text-align: center;
+  margin: 18px 0 12px 0;
 }
 
-.ConteudoDinamico__Image {
-  width: 70%;
-  margin: auto;
-}
-
-.clickCursor:hover {
-  cursor: pointer;
-}
-.MenuEstatico__LinkContainer {
+.Aside__LinkContainer {
   display: flex;
   align-content: center;
-  margin: 12px 0;
+  margin: 6px 0;
 }
 
 .Link__Icon {
   margin: auto 10px auto 0;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 .Link__Text {
   font-family: 'Open Sans', sans-serif;
   color: var(--body-text-color);
   text-decoration: none;
+  font-size: 16px;
+  margin: auto 0;
 }
 
 .Link__Text :visited {
@@ -167,7 +99,12 @@ h1 {
 
 .Bloco {
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.Marginless {
+  margin: 0;
 }
 
 .Formacao__Data {
@@ -177,7 +114,7 @@ h1 {
 }
 
 .Formacao__Instituicao {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin: 6px 0;
 }
@@ -190,24 +127,27 @@ h1 {
 
 .Experiencia__Titulo {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .Experiencia__Data {
-  margin: 0;
-  font-size: 16px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .Experiencia__Descricao {
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 14px;
   text-align: justify;
 }
 
 .Competencias__Lista {
   margin: 0;
-  width: 100%;
+  padding: 0;
+  font-size: 16px;
 }
 
 .Competencias__Lista li {
-  margin: 10px 0;
+  margin: 12px 20px;
 }

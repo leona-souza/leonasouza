@@ -1,77 +1,45 @@
 @media (max-width: 1775px) {
-  .Container {
-    margin-right: 0;
+  aside {
+    margin: 0 auto;
+    max-width: 300px;
   }
 
-  .ConteudoDinamico__Card {
-    width: 90%;
+  main {
+    width: 100%;
+  }
+
+  .Container {
+    flex-direction: row;
+  }
+
+  .Aside__Nome {
+    font-size: 40px;
+  }
+
+  .Aside__Cargo {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 1450px) {
-  .ConteudoDinamico {
-    width: 700px;
+@media (max-width: 1000px) {
+  aside {
+    max-width: 100%;
   }
 
-  .ConteudoDinamico__Card {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1600px) {
-  .Container {
+  main {
     margin: 0;
-  }
-}
-
-@media (max-width: 1250px) {
-  .Container {
-    justify-content: normal;
-    margin: 0px;
-    flex-direction: column;
-  }
-
-  .MenuEstatico {
-    width: 100%;
     padding: 0;
-    min-width: 0px;
+    align-items: stretch;
   }
 
-  .MenuEstatico__Hide {
-    display: block;
-  }
-
-  .MenuEstatico__Header {
-    font-size: var(--header-title-responsive-size);
-  }
-
-  .MenuEstatico__Conteudo {
-    font-size: var(--menu-description-responsive-size);
-  }
-
-  .MenuEstatico__Detalhes {
-    font-size: var(--menu-details-responsive-size);
-  }
-
-  .MenuEstatico__Arrow {
-    display: block;
-    height: 30px;
-    margin-bottom: 20px;
-  }
-
-  .ConteudoDinamico {
-    position: static;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .ConteudoDinamico__Card {
-    min-width: 50%;
-    max-width: 89%;
-  }
-
-  .Bloco {
+  main .Bloco {
     padding: 0 20px;
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .Container {
+    flex-direction: column;
   }
 
   .Competencias__Lista li {
